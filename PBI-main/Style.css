@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e1e2f;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  background-color: white;
+  color: #1e1e2f;
+}
+
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slides {
+  display: none;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Text Section */
+.text-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+}
+/* Registration Form Section */
+.registration-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 5rem 2rem;
+  background-color: #145b65;
+  color: white;
+}
+
+.form-container {
+  background-color: #0c3d43;
+  border: 2px solid white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-grid input {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+button.create-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(to right, #00c0b6, #00d5b1);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.create-btn:hover {
+  background: #00a99d;
+}
+
+.outer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e2f;
+}
+
+
+.main-container {
+  display:flex;
+  width: 300%;
+  max-width: 1100px;
+  background-color: #145b65;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+/* Left side */
+.welcome-section {
+  flex: 1;
+  padding: 100px;
+  text-align: center;
+}
+
+.welcome-section .icon-placeholder {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00c0b6;
+}
+
+.welcome-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e0f7fa;
+}
+
+/* Right side */
+.form-section {
+  flex: 1;
+  background-color: #0c3d43;
+  padding: 100px;
+  border-left: 3px solid #ffffff33;
+}
+
+form {
+  background-color: #0c3d43;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.terms input {
+  margin-right: 8px;
+}
+
+button {
+  padding: 12px;
+  background-color: #00c0b6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #01918b;
+}
+form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+}
+.signup-cards-section {
+  padding: 60px 20px;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1e1e2f;
+}
+
+.signup-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.signup-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 280px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.signup-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.signup-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.signup-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
